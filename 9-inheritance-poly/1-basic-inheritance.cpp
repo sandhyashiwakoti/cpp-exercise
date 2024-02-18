@@ -17,8 +17,12 @@ class Derived : public Base {
 };
 
 int main() {
-    Base *p=new Derived();
-    p->display();
-    p->show();
+    Base b;
+    b.x=2;
+    cout<<b.x;
+    Derived d;
+    d.x=10;
+    cout<<d.x;
+    cout<<b.x;
     return 0;
 }
